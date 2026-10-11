@@ -1,0 +1,16 @@
+{
+  "name": "video-conference-app",
+  "version": "1.0.0",
+  "description": "Production-style video conferencing web application",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm.cmd run dev --prefix server\" \"npm.cmd run dev --prefix client\"",
+    "dev:server": "npm.cmd run dev --prefix server",
+    "dev:client": "npm.cmd run dev --prefix client",
+    "server": "node server/src/server.js",
+    "client": "npm.cmd run dev --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
